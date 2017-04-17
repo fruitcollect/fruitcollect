@@ -13,6 +13,14 @@ page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
 
+
+# Assets
+set :css_dir, "assets/css"
+set :js_dir, "assets/js"
+set :fonts_dir, "assets/fonts"
+set :images_dir, "assets/img"
+set :partials_dir, "partials"
+
 # With alternative layout
 # page '/path/to/file.html', layout: 'other_layout'
 
@@ -40,9 +48,15 @@ page '/*.txt', layout: false
 # Build-specific configuration
 # https://middlemanapp.com/advanced/configuration/#environment-specific-settings
 
-# configure :build do
-#   activate :minify_css
-#   activate :minify_javascript
-# end
+configure :build do
+  activate :minify_css
+  activate :minify_html
+
+  activate :minify_javascript, :inline => true
+  set :js_compressor, Uglifier.new(:mangle => {:toplevel => true}, :compress => {:unsafe => true}, :output => {:comments => :none})
+  # activate :asset_hash
+end
 
 activate :relative_assets       # Links and scripts do not start with /
+
+activate :directory_indexes     # One index per folder. Pretty URLs

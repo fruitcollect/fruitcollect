@@ -1,8 +1,18 @@
 source 'https://rubygems.org'
 
-gem 'middleman', '~> 4.2'
-gem 'middleman-autoprefixer', '~> 2.7'
+gem 'middleman', '3.4.1'
+gem 'middleman-livereload'
+gem 'middleman-sprockets'
+gem "middleman-minify-html"
+
+gem "uglifier"
+
+gem 'middleman-autoprefixer'
 gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby]
-gem 'wdm', '~> 0.1', platforms: [:mswin, :mingw]
+gem 'wdm', platforms: [:mswin, :mingw]
 
 gem 'middleman-gh-pages'
+
+gem "bootstrap-sass", :require => false
+gem "font-awesome-sass", :require => false
+gem "jquery-rails", :require => false

@@ -1,0 +1,103 @@
+.text-primary, .btn-primary .badge, .btn-link,a.list-group-item.active > .badge,.nav-pills > .active > a > .badge, p.drop-caps:first-child:first-letter, .accent-color, .main-navigation > ul > li > a:hover, .posts-listing .post-time, h3.title .title-border i, .upcoming-events .event-cats a:hover, .nav-np .next:hover, .nav-np .prev:hover, .basic-link, .pagination > li > a:hover,.pagination > li > span:hover,.pagination > li > a:focus,.pagination > li > span:focus, .staff-item .meta-data{
+	color:#8cc152;
+}
+a:hover{
+	color:#8cc152;
+}
+.basic-link:hover{
+	opacity:.9
+}
+p.drop-caps.secondary:first-child:first-letter, .accent-bg, .fa.accent-color, .btn-primary,
+.btn-primary.disabled,
+.btn-primary[disabled],
+fieldset[disabled] .btn-primary,
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled:active,
+.btn-primary[disabled]:active,
+fieldset[disabled] .btn-primary:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled].active,
+fieldset[disabled] .btn-primary.active,
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus,
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus,
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus,
+.label-primary,
+.progress-bar-primary,
+a.list-group-item.active,
+a.list-group-item.active:hover,
+a.list-group-item.active:focus, .accordion-heading .accordion-toggle.active, .accordion-heading:hover .accordion-toggle.active, .accordion-heading:hover .accordion-toggle.inactive,
+.panel-primary > .panel-heading, .carousel-indicators .active, .flex-control-nav a:hover, .flex-control-nav a.flex-active, .media-box .media-box-wrapper, .top-menu li a, .upcoming-events .event-date, .media-box .zoom, .media-box .expand, .project-overlay .project-cat, .flexslider .flex-prev:hover, .flexslider .flex-next:hover, .events-listing .upcoming-events li:hover .event-details-btn:hover, .single-event-info .icon-s, .event-register-block:hover, .fc-event, .projects-grid .project-cat, .tag-cloud a:hover, .main-navigation > ul > li ul{
+  background-color: #8cc152;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary, .top-menu li a:hover{
+  background: #8cc152;
+  opacity:.9
+}
+.nav .open > a,
+.nav .open > a:hover,
+.nav .open > a:focus,
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus,
+a.thumbnail:hover,
+a.thumbnail:focus,
+a.thumbnail.active,
+a.list-group-item.active,
+a.list-group-item.active:hover,
+a.list-group-item.active:focus,
+.panel-primary,
+.panel-primary > .panel-heading{
+	border-color:#8cc152;
+}
+.panel-primary > .panel-heading + .panel-collapse .panel-body, .main-navigation > ul > li ul, #featured-events ul.slides{
+	border-top-color:#8cc152;
+}
+.panel-primary > .panel-footer + .panel-collapse .panel-body, .nav-tabs li a:active, .nav-tabs li.active a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus, .title .title-border{
+	border-bottom-color:#8cc152;
+}
+blockquote{
+	border-left-color:#8cc152;
+}
+.main-navigation > ul > li ul:before, .main-navigation > ul > li.megamenu > ul:before{
+	border-bottom-color:#8cc152;
+}
+.main-navigation > ul > li ul li ul:before{
+	border-right-color:#8cc152;
+}
+/* SECONDARY COLOR */
+.secondary-color, .top-header .social-links a:hover, h3.block-title{
+	color:#BF191A;
+}
+.secondary-color-bg, .top-menu li.secondary a, .featured-projects, hr.sm, .flexslider .flex-prev, .flexslider .flex-next, .events-listing .upcoming-events li:hover .event-details-btn, .single-event-info .time, .event-single-venue > span:first-child, .tag-cloud a, .staff-volunteers, .accordion-heading:hover .accordion-toggle, .page-header, .twitter-widget li span.date{
+	background-color:#BF191A;
+}
+.top-menu li.secondary a:hover, .secondary-color-bg:hover{
+	background-color:#BF191A;
+	opacity:.9;
+}
+.event-register-block{
+	border-color:#BF191A;
+}
+
+/* Color Scheme Specific Classes */

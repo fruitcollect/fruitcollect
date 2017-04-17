@@ -1,16 +1,45 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Use the title from a page's frontmatter if it has one -->
-    <title><%= current_page.data.title || "Middleman" %></title>
-    <%= stylesheet_link_tag "site" %>
-    <%= javascript_include_tag "site" %>
-  </head>
-  <body>
-    <%= yield %>
-  </body>
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <meta name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!-- Use the title from a page's frontmatter if it has one -->
+      <title><%= current_page.data.title || "Middleman" %></title>
+      <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Dupas" %>">
+      <%= stylesheet_link_tag "site" %>
+      <%= javascript_include_tag "site" %>
+   </head>
+   <body class="home">
+      <div id="fb-root"></div>
+      <%= javascript_include_tag 'sdk', 'data-turbolinks-track' => 'reload' %>
+      <header class="site-header">
+	 <%= partial "navigation" %>
+      </header>
+      <%#= render 'layouts/messages' %>
+      <div class="page-header">
+	 <div class="container">
+   	    <div class="row">
+
+	       <!-- MAIN IMAGE -->
+
+	    </div>
+	 </div>
+      </div>
+      <!-- End Hero Slider -->
+      <div class="double-border"></div>
+      <!-- Start Lead Block -->
+      <div class="lead-block">
+    	 <div class="container">
+
+	    <%= yield %>
+
+         </div>
+      </div>
+
+      <%#= render 'layouts/footer' %>
+
+      <a id="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+   </body>
 </html>
