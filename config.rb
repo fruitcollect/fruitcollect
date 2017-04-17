@@ -44,3 +44,5 @@ page '/*.txt', layout: false
 #   activate :minify_css
 #   activate :minify_javascript
 # end
+
+activate :relative_assets       # Links and scripts do not start with /
