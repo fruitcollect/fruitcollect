@@ -10,6 +10,7 @@
       <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Dupas" %>">
       <%= stylesheet_link_tag "site" %>
       <%= javascript_include_tag "site" %>
+      <%= favicon_tag 'favicon.png' %>
    </head>
    <body class="home">
       <div id="fb-root"></div>
@@ -38,7 +39,7 @@
          </div>
       </div>
 
-      <%#= render 'layouts/footer' %>
+      <%= partial "footer" %>
 
       <a id="back-to-top"><i class="fa fa-angle-double-up"></i></a>
    </body>

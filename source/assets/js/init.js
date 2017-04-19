@@ -335,17 +335,10 @@ jQuery(function($){
     $(this).find("ul").css('left', -width);
   });
 
-  //Footer Widget Title
-  $('.footer-widget .widgettitle').html(function(index, curHTML) {
-    var text = curHTML.split(/[\s-]/),
-	newtext = '<span class="accent-color">' + text.pop() + '</span>';
-    return text.join(' ').concat(' ' + newtext);
-  });
-
   // Double border
-  $(".double-border").each(function(){
-    $(this).append('<div class="accent-bg"></div><div class="accent-bg"></div>');
-  });
+  /* $(".double-border").each(function(){
+   *   $(this).append('<div class="accent-bg"></div><div class="accent-bg"></div>');
+   * });*/
 
   var BCOLS = function(){
     var $tallestCol;
@@ -359,23 +352,6 @@ jQuery(function($){
       $(this).find('div').css('height',$tallestCol);
     });
   }
-
-  //Donation Form
-  $(".donate-paypal").click(function(){
-    CauseName = $(this).parents(".cause-item").find("h3").html();
-    $(".payment-to-cause").html(CauseName);
-  });
-  $('select[name="donation amount"]').change(function(){
-    if ($(this).val() === "Custom")
-      {
-	$('.custom-donate-amount').show();
-	$('input[name="Custom Donation Amount"]').focus();
-      }
-    else
-      {
-	$('.custom-donate-amount').hide();
-      }
-  });
 
   // Listing Item Height
   var LIH = function() {

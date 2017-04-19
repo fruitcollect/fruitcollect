@@ -6,14 +6,12 @@
                <h4><i class="fa fa-apple"></i> <a href="#" class="lienLangue">Fr</a></h4>
                <h4><i class="fa fa-apple"></i> <a href="#" class="lienLangue">Nl</a></h4>
                <h4><i class="fa fa-apple"></i> <a href="#" class="lienLangue">En</a></h4>
-
             </div>
          </div>
          <div class="col-md-6">
             <ul class="social-links social-links-lighter">
                <li><a href="https://www.facebook.com/fruitcollect" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
                <li><a href="mailto:info@fruitcollect.be"><i class="fa fa-envelope"></i></a></li>
-
             </ul>
          </div>
       </div>
@@ -22,17 +20,18 @@
 <div class="lower-header">
    <div class="container for-navi">
       <h1 class="logo">
-         <%#= link_to image_tag("logo_fruitcollect.png"), root_path %>
+         <%= link_to image_tag("logo_fruitcollect.png"), "/" %>
       </h1>
       <!-- Main Navigation -->
       <nav class="main-navigation">
          <ul class="sf-menu">
-            <li><%#= link_to "Accueil", root_path %></li>
-      	    <li><%#= link_to "Notre Mission", mission_path %></li>
-       	    <li><%#= link_to "Nous soutenir", soutien_path %></li>
-            <li><%#= link_to "Commander du jus", commande_path %></li>
-            <li><%#= link_to "Calendrier des récoltes", calendrier_path %></li>
-            <li><%#= link_to "Contact", contact_path %></li>
+            <!-- <li><%#= link_to "Accueil", "/" %></li> -->
+      	    <li><%= link_to "Notre Mission", "/mission" %></li>
+       	    <li><%= link_to "Nous soutenir", "/soutien" %></li>
+            <li><%= link_to "Commander du jus", "/commande" %></li>
+            <li><%= link_to "Calendrier des récoltes", "/calendrier" %></li>
+            <li><%= link_to "Contact", "/contact" %></li>
+	    <li><%= link_to "Gallerie", "/gallerie" %></li>
          </ul>
       </nav>
       <!-- Mobile Menu Trigger Icon -->
