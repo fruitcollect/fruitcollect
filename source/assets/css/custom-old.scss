@@ -23,7 +23,7 @@ a.btn-fc {
     background-image: none;
     border: none;
     text-transform: uppercase;
-    font-family: 'Roboto';
+    font-family: 'Roboto', Sans Serif;
     font-weight: 700;
     /* font-size: 12px; */
     padding: 10px 16px;
@@ -31,7 +31,7 @@ a.btn-fc {
 
 @media screen and (min-width: 1200px) {
     .container {
-	width: 1040px;
+	width: 1200px;
     }
 }
 

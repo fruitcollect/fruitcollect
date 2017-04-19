@@ -1004,7 +1004,7 @@ body.boxed .body{
 @media (min-width: 1200px) {
 body.boxed .body .site-header, body.boxed .body .main-menu-wrapper{
 	max-width:100%;
-	width:1080px;
+	width:1200px;
 }
 }
 .site-header{
@@ -1012,9 +1012,9 @@ body.boxed .body .site-header, body.boxed .body .main-menu-wrapper{
 	top:0;
 	left:50%;
 	z-index:9;
-	width:1080px;
+	width:1300px;
 	margin:0 auto;
-	margin-left:-540px;
+	margin-left:-650px;
 	-webkit-border-radius:0 0 5px 5px;
 	border-radius:0 0 5px 5px;
 	-webkit-box-shadow:0 1px 2px rgba(0,0,0,.1);
@@ -1380,7 +1380,7 @@ h1.logo{
 	opacity:0;
 }
 .lead-block{
-	/* background: image-url('wave-high.png') repeat-x #fafafa; */
+	background: image-url('wave-high.png') repeat-x #fafafa;
 	border-bottom:#e8e8e8 1px solid;
 	padding:50px 0;
 }
@@ -1558,7 +1558,7 @@ h1.logo{
 .our-partners{
 	border-top:#e8e8e8 1px solid;
 	padding:40px 0;
-	/* background-image: image-url('wave-high.png'); */
+	background-image: image-url('wave-high.png');
 	background-repeat: repeat-x;
 	background-color:#fafafa;
 }
