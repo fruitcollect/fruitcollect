@@ -1584,7 +1584,7 @@ h1.logo{
 	color:#fff;
 }
 .site-top-footer{
-	background-image:url(../images/wave-high.png);
+	background-image: image-url('wave-high.png');
 	background-repeat: repeat-x;
 	background-color:#2f2f2f;
 	padding:40px 0;
@@ -1637,7 +1637,7 @@ h1.logo{
 }
 .secondary-bar{
 	padding:20px 0;
-	background:url(../images/wave-high.png) repeat-x #fafafa;
+	background: image-url('wave-high.png') repeat-x #fafafa;
 	border-bottom:#e8e8e8 1px solid;
 }
 .secondary-bar .flexslider .flex-prev, .secondary-bar .flexslider .flex-next{
