@@ -4,59 +4,65 @@ title: FruitCollect - Nous Soutenir
 <div class="row">
    <div class="col-sm-12">
 
-      <h2>Devenir Récolteur / Donneur</h2>
+      <h2>Devenir Récolteur et/ou Donneur</h2>
+
       <div class="row">
-	 <form method="post" id="contactform" name="contactform" class="contact-form clearfix" action="mail/formulaire_send.php">
+	 <form method="post" id="contactform" name="contactform" class="contact-form clearfix" action="https://formspree.io/carlosvkr@gmail.com">
             <div class="col-md-6">
-               <div class="form-group">
-                  <input type="text" id="name" name="name"  class="form-control input-lg" placeholder="Nom*">
-               </div>
-               <div class="form-group">
-                  <input type="text" id="prenom2" name="prenom2"  class="form-control input-lg" placeholder="Prénom*">
-               </div>
-               <div class="form-group">
-                  <input type="text" id="age" name="age"  class="form-control input-lg" placeholder="Date de Naissance*">
-               </div>
-               <div class="form-group">
-                  <input type="text" id="adresse" name="adresse"  class="form-control input-lg" placeholder="Adresse, n°, ville*">
-               </div>
-               <div class="form-group">
-                  <input type="email" id="email" name="email"  class="form-control input-lg" placeholder="Email*">
-               </div>
-               <div class="form-group">
-                  <input type="text" id="phone" name="phone" class="form-control input-lg" placeholder="Téléphone*">
-               </div>
+               <input type="text" id="name" name="Nom"  class="form-control input-lg" placeholder="Nom*">
+               <input type="text" id="prenom" name="Prénom"  class="form-control input-lg" placeholder="Prénom*">
+               <input type="text" id="age" name="Age"  class="form-control input-lg" placeholder="Date de Naissance*">
+               <input type="text" id="adresse" name="Adresse"  class="form-control input-lg" placeholder="Adresse, n°, ville*">
+               <input type="email" id="email" name="email"  class="form-control input-lg" placeholder="Email*">
+               <input type="text" id="phone" name="Telephone/GSM" class="form-control input-lg" placeholder="Téléphone*">
+	       <label>J'aimerais devenir: </label>
+
+	       <div class="checkbox">
+		  <input id="recolteur-hidden" type="text" name="Récolteur?"/><!-- Hidden, updated with JS -->
+		  <input id="recolteur" type="checkbox" value="">
+		  <label for="recolteur">Récolteur</label>
+
+		  <input id="donneur-hidden" type="text" name="Donneur?"/><!-- Hidden, updated with JS -->
+		  <input id="donneur" type="checkbox" value="">
+		  <label for="donneur">Donneur</label>
+	       </div>
             </div>
 
             <div class="col-md-6">
                <div class="form-group">
-                  <textarea cols="6" rows="7" id="comments" name="comments" class="form-control input-lg" placeholder="Informations complémentaires **"></textarea>
-                  **Ex: - Vous souhaitez devenir Donneur et Récolteur; <br> - Pour les donneurs de fruits, veuillez nous renseigner le <strong>type</strong> et le <strong>nombre</strong> d'arbres fruitiers dont vous disposez ainsi que la <strong>période de récolte</strong> de chaque arbre. <br>Merci d'avance!
+                  <textarea cols="6" rows="7" id="comments" name="Informations complémentaires" class="form-control input-lg" placeholder="Informations complémentaires"></textarea>
+                  <p>Pour les donneurs de fruits, veuillez nous renseigner le <strong>type</strong> et le <strong>nombre</strong> d'arbres fruitiers dont vous disposez ainsi que la <strong>période de récolte</strong> de chaque arbre. <br>Merci d'avance!</p>
                </div>
 
             </div>
 
-            <div class="col-md-12" align="center" style="margin-top:25px;">
-               <input id="submit" name="submit" type="submit" class="btn btn-primary btn-lg" value="Envoyer">
+            <div class="col-md-12">
+               <button id="submit" type="submit" class="btn btn-primary btn-lg btn-fc">Envoyer</button>
             </div>
 	 </form>
       </div>
-      <div class="clearfix"></div>
-      <div id="message"></div>
    </div>
 
-   <div class="col-md-8 col-sm-8">
+   <div class="col-sm-12">
       <h2>Faire un Don</h2>
       <p class="lead">Ressources nécessaires au bon déroulement de FruitCollect</p>
-      <p>
-	 En plus des donneurs et  récolteurs de fruits, indispensables pour la survie de l'association, les donateurs sont tout aussi importants car nous avons sans cesse besoin de nouveaux matériels pour récolter, de nouveaux moyens de nous faire connaître, des moyens de locomotion pour transporter les fruits, etc...<br><br>
-	 Pour nous aider et nous soutenir, vous pouvez dès lors nous faire parvenir des outils neufs ou d'occasions, et/ou une participation financière via :
-	 <br>
-	 <br>
-	 Notre compte bancaire :<br>
-	 Fortis<br>
-	 BE08 0017 8545 1213
-      </p>
+      <p>En plus des donneurs et  récolteurs de fruits, indispensables pour la survie de l'association, les donateurs sont tout aussi importants car nous avons sans cesse besoin de nouveaux matériels pour récolter, de nouveaux moyens de nous faire connaître, des moyens de locomotion pour transporter les fruits, etc... </p>
+      <p>Pour nous aider et nous soutenir, vous pouvez dès lors nous faire parvenir des outils neufs ou d'occasions, et/ou une participation financière via :</p>
+
+      <div class="panel panel-default">
+	 <div class="panel-heading">
+	    <h4>Notre compte bancaire :</h4>
+	 </div>
+	 <div class="panel-body">
+	    <strong>Banque: </strong>
+	    <p>BNP Paribas Fortis</p>
+	    <strong>BIC: </strong>
+	    <p>GEBABEBB</p>
+	    <strong>IBAN: </strong>
+	    <p>BE08 0017 8545 1213</p>
+	 </div>
+      </div>
+
 
    </div>
 </div>

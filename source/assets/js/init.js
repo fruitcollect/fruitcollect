@@ -4,50 +4,6 @@ jQuery(function($){
   var GAEA = window.GAEA || {};
 
   /* ==================================================
-     Contact Form Validations
-     ================================================== */
-  GAEA.ContactForm = function(){
-    $('.contact-form').each(function(){
-      var formInstance = $(this);
-      formInstance.submit(function(){
-
-	var action = $(this).attr('action');
-
-	$("#message").slideUp(750,function() {
-	  $('#message').hide();
-
-	  $('#submit')
-	    .after('<img src="images/assets/ajax-loader.gif" class="loader" />')
-	    .attr('disabled','disabled');
-
-	  $.post(action, {
-	    name: $('#name').val(),
-	    prenom2: $('#prenom2').val(),
-	    age: $('#age').val(),
-	    adresse: $('#adresse').val(),
-	    email: $('#email').val(),
-	    phone: $('#phone').val(),
-	    donneur: $('#donneur').val(),
-	    recolter: $('#recolter').val(),
-	    comments: $('#comments').val()
-	  },
-
-		 function(data){
-		   document.getElementById('message').innerHTML = data;
-		   $('#message').slideDown('slow');
-		   $('.contact-form img.loader').fadeOut('slow',function(){$(this).remove()});
-		   $('#submit').removeAttr('disabled');
-		   if(data.match('success') != null) $('.contact-form').slideUp('slow');
-
-		 }
-	  );
-	});
-	return false;
-      });
-    });
-  }
-
-  /* ==================================================
      Responsive Nav Menu
      ================================================== */
   GAEA.navMenu = function() {
@@ -273,15 +229,11 @@ jQuery(function($){
      Init Functions
      ================================================== */
   $(document).ready(function(){
-    GAEA.ContactForm();
     GAEA.scrollToTop();
     GAEA.accordion();
     GAEA.toggle();
     GAEA.toolTip();
     GAEA.navMenu();
-    GAEA.TwitterWidget();
-    GAEA.FlexSlider();
-    GAEA.NivoSlider();
     GAEA.StickyNav();
   });
 
