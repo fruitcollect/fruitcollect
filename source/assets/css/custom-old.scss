@@ -92,9 +92,13 @@ input[type=checkbox]:checked + label:before { letter-spacing: 5px; } /* allow sp
 /* Navbar */
 
 .navbar-nav > li > a, .navbar-brand {
-    line-height: 75px;
+    line-height: 40px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
 }
 
 .navbar {
-    min-height: 75px
+    min-height: 40px;
+    opacity: 0.9;
 }
