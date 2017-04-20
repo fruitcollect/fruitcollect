@@ -2126,23 +2126,23 @@ listing-header{
 /* ==================================================
    7. Responsive Media Queries
 ================================================== */
-@media (min-width: 992px) and (max-width: 1199px) {
-    .main-navigation > ul > li > a{
-	padding:0 8px;
-    }
-    .main-navigation > ul > li.megamenu > ul{
-	width:980px;
-	left:-5px!important;
-    }
-    .site-header{
-	width:980px;
-	margin-left:-490px;
-    }
-    .gallery-filter ul li span{
-	display:none;
-    }
-}
-@media only screen and (max-width: 992px) {
+/* @media (min-width: 992px) and (max-width: 1199px) { */
+/*     .main-navigation > ul > li > a{ */
+/* 	padding:0 8px; */
+/*     } */
+/*     .main-navigation > ul > li.megamenu > ul{ */
+/* 	width:980px; */
+/* 	left:-5px!important; */
+/*     } */
+/*     .site-header{ */
+/* 	width:980px; */
+/* 	margin-left:-490px; */
+/*     } */
+/*     .gallery-filter ul li span{ */
+/* 	display:none; */
+/*     } */
+/* } */
+@media only screen and (max-width: 1199px) {
     .page-header{
 	height:100px;
     }

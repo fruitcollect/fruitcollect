@@ -18,7 +18,7 @@ jQuery(function($){
       } else {
 	$(".main-navigation").css("display","none");
       }
-      if ($(window).width() > 992){
+      if ($(window).width() > 1199){
 	$(".main-navigation").css("display","block");
       } else {
 	$(".main-navigation").css("display","none");
@@ -221,7 +221,7 @@ jQuery(function($){
   GAEA.StickyNav = function() {
     if($("body").hasClass("boxed"))
       return false;
-    if ($(window).width() > 992){
+    if ($(window).width() > 1199){
       $(".lower-header").sticky({topSpacing:0});
     }
   }

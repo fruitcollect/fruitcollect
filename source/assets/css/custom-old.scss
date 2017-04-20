@@ -26,14 +26,8 @@ div.page-header {
     font-weight: 700;
     font-size: 14px;
     padding: 10px 16px;
-}
-
-/* Adjusting container for bigger menu */
-
-@media screen and (min-width: 1200px) {
-    .container {
-	width: 1250px;
-    }
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 /* Responsive youtube embed */
@@ -94,3 +88,13 @@ input[type=checkbox] + label:before { letter-spacing: 10px; } /* space between c
 
 input[type=checkbox]:checked + label:before { content: "\f046"; } /* checked icon */
 input[type=checkbox]:checked + label:before { letter-spacing: 5px; } /* allow space for check mark */
+
+/* Navbar */
+
+.navbar-nav > li > a, .navbar-brand {
+    line-height: 75px;
+}
+
+.navbar {
+    min-height: 75px
+}
