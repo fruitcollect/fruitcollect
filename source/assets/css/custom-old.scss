@@ -23,17 +23,20 @@ a.btn-fc {
     background-image: none;
     border: none;
     text-transform: uppercase;
-    font-family: 'Roboto', Sans Serif;
     font-weight: 700;
-    /* font-size: 12px; */
+    font-size: 12px;
     padding: 10px 16px;
 }
 
+/* Adjusting container for bigger menu */
+
 @media screen and (min-width: 1200px) {
     .container {
-	width: 1200px;
+	width: 1250px;
     }
 }
+
+/* Responsive youtube embed */
 
 .video-container {
     position: relative;
@@ -51,7 +54,15 @@ a.btn-fc {
     height: 100%;
 }
 
+/* Green double border under header image */
+
 .double-border {
     height: 5px;
     background-color: #8cc152;
+}
+
+/* Tabs */
+
+.nav.nav-tabs {
+    margin-bottom: 2em;
 }
