@@ -6,6 +6,7 @@ activate :autoprefixer do |prefix|
 end
 
 activate :directory_indexes     # One index per folder. Pretty URLs
+activate :gzip
 
 # Layouts
 # https://middlemanapp.com/basics/layouts/
@@ -53,6 +54,6 @@ configure :build do
   activate :minify_css
   activate :minify_html
   activate :minify_javascript, :inline => true
-  set :js_compressor, Uglifier.new(:mangle => {:toplevel => true}, :compress => {:unsafe => true}, :output => {:comments => :none})
+  set :js_compressor, Uglifier.new(:mangle => {:toplevel => false}, :compress => {:unsafe => true}, :output => {:comments => :none})
   # activate :asset_hash
 end
