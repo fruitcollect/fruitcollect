@@ -1,3 +1,7 @@
+---
+title: FruitCollect - Commande de jus
+---
+
 <h2>Commande de jus</h2>
 
 <p>Afin de couvrir les nombreux frais de l’ASBL nous vous proposons d’acheter notre 100% pur jus de pommes de quoi vous faire le plein de vitamines.</p>
@@ -9,7 +13,104 @@
    <li>Tout cela pour <strong>3€ par bouteille</strong> de 1 litre et <strong>1€ par pain au chocolat.</li>
 </ul>
 
+<h2>Livraison FruitBike</h2>
 
-<form method="post" action="">
-   <input type="text">
-</form>
+<div class="row">
+   <div class="col-sm-8">
+      <form method="post" action="https://formspree.io/carlosvkr@gmail.com">
+	 <input type="text" placeholder="Nom/prénom" class="form-control">
+	 <input type="text" placeholder="Adresse de livraison" class="form-control">
+	 <div class="row">
+	    <div class="col-sm-6">
+	       <input type="text" id="datepicker" placeholder="Date de livraison (un dimanche sur deux)" class="form-control">
+	    </div>
+	    <div class="col-sm-6">
+	       <input type="text" id="timepicker" placeholder="Heure de livraison" id="timepicker2" class="form-control">
+	    </div>
+	 </div>
+	 <div class="row">
+	    <div class="col-sm-6">
+	       <input type="number" min="4" placeholder="Nombre de bouteilles souhaitées" class="form-control">
+	    </div>
+	    <div class="col-sm-6">
+	       <input type="number" placeholder="Nombre de pains au chocolat souhaités" class="form-control">
+	    </div>
+	 </div>
+	 <input type="email" placeholder="Email" class="form-control">
+	 <input type="text" placeholder="Numéro de téléphone" class="form-control">
+      </form>
+      <button class="btn btn-primary btn-lg btn-fc" type="submit">Commander</button>
+      <p class="pull-right">Cout total: </p>
+   </div>
+   <div class="col-sm-4">
+      Pictures
+   </div>
+</div>
+
+<script type="text/javascript">
+ var dates_disabled = [];
+ var a_year_from_now = new Date(new Date().setFullYear(new Date().getFullYear() + 1));
+ var d = new Date();
+ d.setHours(0,0,0,0);
+
+ for(d; d <= a_year_from_now; d.setDate(d.getDate() + 1)) {
+   if (enableEverySecondSunday(d) == false) {
+     var string_date = d.getDate() + "/" + (d.getMonth() + 1) + "/" + d.getFullYear();
+     dates_disabled.push(string_date);
+   }
+ }
+
+
+ $('#datepicker').datepicker({
+   format: "dd/mm/yyyy",
+   /* immediateUpdates: true,*/
+   startDate: new Date(),
+   weekStart: 1,
+   startView: "days",
+   maxViewMode: 1,
+   todayBtn: false,
+   language: "fr",
+   multidate: false,
+   /* daysOfWeekDisabled: "1,2,3,4,5,6",*/
+   /* daysOfWeekHighlighted: "0",*/
+   datesDisabled: dates_disabled,
+   calendarWeeks: false,
+   /* autoclose: true,*/
+   todayHighlight: true,
+   /* beforeShowDay: enableSUNDAYS,*/
+ });
+
+ // a and b are javascript Date objects
+ function dateDiffInDays(a, b) {
+   var _MS_PER_DAY = 1000 * 60 * 60 * 24;
+
+   // Discard the time and time-zone information.
+   var utc1 = Date.UTC(a.getFullYear(), a.getMonth(), a.getDate());
+   var utc2 = Date.UTC(b.getFullYear(), b.getMonth(), b.getDate());
+
+   return Math.floor((utc2 - utc1) / _MS_PER_DAY);
+ }
+
+
+ //Logic to enable every sunday, how to do every other sunday?
+ function enableEverySecondSunday(date) {
+   var day = date.getDay();
+   /* var oneDay = 24 * 60 * 60 * 1000; //milliseconds in one day*/
+   var startingDate = new Date(2017, 03, 30);
+
+
+
+   var diffDays = dateDiffInDays(startingDate, date);
+   console.log(diffDays);
+   /* (Math.abs(1493503200000 - date.getTime()) / oneDay);*/
+
+   return ((day == 0) && (Math.ceil(diffDays % 14 == 0))) ? true : false; //sunday and every other weeks
+ }
+
+ $('#timepicker').timepicker({
+   'minTime': '9:00am',
+   'maxTime': '1:00pm',
+   'timeFormat': 'H:i',
+   'step' : 15,
+ });
+</script>

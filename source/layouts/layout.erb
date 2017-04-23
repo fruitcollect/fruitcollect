@@ -7,12 +7,14 @@
             content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <!-- Use the title from a page's frontmatter if it has one -->
       <title><%= current_page.data.title || "FruitCollect" %></title>
-      <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Dupas" %>">
+      <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "FruitCollect" %>">
       <%= stylesheet_link_tag "site" %>
       <%= javascript_include_tag "site" %>
       <%= favicon_tag 'favicon.png' %>
       <% if current_page.data.extra_js %>
-	 <script src='<%= current_page.data.extra_js %>'></script>
+	 <% current_page.data.extra_js.each do |js_file| %>
+	    <script src='<%= js_file %>'></script>
+	 <% end %>
       <% end %>
       <% if current_page.data.extra_css %>
 	 <link src='<%= current_page.data.extra_css %>' rel='stylesheet' />

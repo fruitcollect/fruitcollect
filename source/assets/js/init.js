@@ -46,4 +46,5 @@ jQuery(function($){
   $('video#presentation').click(function(){
     $(this).get(0).paused ? $(this).get(0).play() : $(this).get(0).pause();
   });
+
 });

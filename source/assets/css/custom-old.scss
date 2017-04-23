@@ -14,6 +14,11 @@ img.desaturate {
     }
 }
 
+td.day:not(.disabled) {
+    border: 2px solid #8cc152;
+    border-radius: 4px;
+}
+
 div.page-header {
     background-image: image-url('img_budget.jpg');
 }
@@ -28,24 +33,6 @@ div.page-header {
     padding: 10px 16px;
     margin-top: 1em;
     margin-bottom: 1em;
-}
-
-/* Responsive youtube embed */
-
-.video-container {
-    position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 30px; height: 0; overflow: hidden;
-}
-
-.video-container iframe,
-.video-container object,
-.video-container embed {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
 }
 
 /* Green double border under header image */
@@ -78,20 +65,6 @@ img.apple {
 img.team-pic {
     margin-top: 2em;
 }
-
-/*** custom checkboxes ***/
-
-input[type=checkbox] { display:none; } /* to hide the checkbox itself */
-input[type=checkbox] + label:before {
-  font-family: FontAwesome;
-  display: inline-block;
-}
-
-input[type=checkbox] + label:before { content: "\f096"; } /* unchecked icon */
-input[type=checkbox] + label:before { letter-spacing: 10px; } /* space between checkbox and label */
-
-input[type=checkbox]:checked + label:before { content: "\f046"; } /* checked icon */
-input[type=checkbox]:checked + label:before { letter-spacing: 5px; } /* allow space for check mark */
 
 /* Navbar */
 
