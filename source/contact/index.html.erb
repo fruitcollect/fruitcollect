@@ -16,48 +16,77 @@ title: FruitCollect - Contact
 
 <hr>
 
-<div class="main" role="main">
-   <div id="content" class="content full">
-      <div class="container">
-         <div class="row">
-            <div class="col-md-8">
-               <div class="spacer-20"></div>
-               <h2>Nous écrire</h2>
-               <div class="row">
-                  <form method="post" id="contactform" name="contactform" class="contact-form clearfix" action="https://formspree.io/carlosvkr@gmail.com">
-                     <div class="col-md-6">
-                        <div class="form-group">
-                           <input type="text" id="name" name="Nom/Prénom" class="form-control input-lg" placeholder="Nom et prénom*">
-                        </div>
-                        <div class="form-group">
-                           <input type="email" id="email" name="email" class="form-control input-lg" placeholder="Email*">
-                        </div>
-                        <div class="form-group">
-                           <input type="text" id="phone" name="Téléphone/GSM" class="form-control input-lg" placeholder="Téléphone">
-                        </div>
+<div id="content" class="content full">
+   <div class="container">
+      <div class="row">
+         <div class="col-md-8">
+            <div class="spacer-10"></div>
+            <h2>Nous écrire</h2>
+            <div class="row">
+               <form method="post" id="contactform" name="contactform" class="contact-form clearfix" action="https://formspree.io/carlosvkr@gmail.com">
+                  <div class="col-md-6">
+                     <div class="form-group">
+                        <input type="text" id="name" name="Nom/Prénom" class="form-control input-lg" placeholder="Nom et prénom*">
                      </div>
-                     <div class="col-md-6">
-                        <div class="form-group">
-                           <textarea cols="6" rows="7" id="comments" name="Message" class="form-control input-lg" placeholder="Votre message"></textarea>
-                        </div>
+                     <div class="form-group">
+                        <input type="email" id="email" name="email" class="form-control input-lg" placeholder="Email*">
                      </div>
-                     <div class="col-md-12">
-                        <button id="submit" name="submit" type="submit" class="btn btn-primary btn-lg btn-fc pull-right">Envoyer</button>
+                     <div class="form-group">
+                        <input type="text" id="phone" name="Téléphone/GSM" class="form-control input-lg" placeholder="Téléphone">
                      </div>
-                  </form>
-               </div>
-            </div>
-            <!-- Start Sidebar -->
-            <div class="col-md-4 sidebar right-sidebar">
-               <div class="widget sidebar-widget text_widget">
-                  <h3 class="title"><div class="title-border"><div class="title-border">Info :</div></div></h3>
-                  <address>
-                     N'hésitez pas à nous laisser votre message, nous nous ferons un plaisir d'y répondre dans les plus brefs délais.
-                  </address>
-               </div>
-
+                  </div>
+                  <div class="col-md-6">
+                     <div class="form-group">
+                        <textarea cols="6" rows="7" id="comments" name="Message" class="form-control input-lg" placeholder="Votre message"></textarea>
+                     </div>
+                  </div>
+                  <div class="col-md-12">
+                     <button id="submit" name="submit" type="submit" class="btn btn-primary btn-lg btn-fc">Envoyer</button>
+                  </div>
+               </form>
             </div>
          </div>
+         <!-- Start Sidebar -->
+         <div class="col-md-4 sidebar right-sidebar">
+            <div class="widget sidebar-widget text_widget">
+               <h3 class="title">Info :</h3>
+               <address>
+                  N'hésitez pas à nous laisser votre message, nous nous ferons un plaisir d'y répondre dans les plus brefs délais.
+               </address>
+            </div>
+
+         </div>
+      </div>
+      <div class="row">
+	 <div class="col-sm-8">
+	    <div id="map" style='width: 100%; height: 400px; margin-top: 2em;'></div>
+	    <script>
+	     function initMap() {
+               var dumon = {lat: 50.839870, lng: 4.465323};
+               var map = new google.maps.Map(document.getElementById('map'), {
+		 zoom: 16,
+		 center: dumon
+               });
+	       var contentString = '<div id="content"><p>Place Dumon, Woluwe Saint Pierre, 1150, Bruxelles</p></div>';
+
+	       var infowindow = new google.maps.InfoWindow({
+		 content: contentString
+               });
+
+	       var marker = new google.maps.Marker({
+		 position: dumon,
+		 map: map,
+		 title: "Helo"
+	       });
+
+	       marker.addListener('click', function() {
+		 infowindow.open(map, marker);
+               });
+	     }
+	    </script>
+	 </div>
       </div>
    </div>
 </div>
+
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjGD14mJ3VmBhf6Hf40p6bBOkV03Z8KUc&callback=initMap"></script>

@@ -11,6 +11,12 @@
       <%= stylesheet_link_tag "site" %>
       <%= javascript_include_tag "site" %>
       <%= favicon_tag 'favicon.png' %>
+      <% if current_page.data.extra_js %>
+	 <script src='<%= current_page.data.extra_js %>'></script>
+      <% end %>
+      <% if current_page.data.extra_css %>
+	 <link src='<%= current_page.data.extra_css %>' rel='stylesheet' />
+      <% end %>
    </head>
    <body class="home">
       <div id="fb-root"></div>
