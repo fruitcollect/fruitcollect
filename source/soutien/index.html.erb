@@ -16,28 +16,22 @@ title: FruitCollect - Nous Soutenir
                <input type="email" id="email" name="email"  class="form-control input-lg" placeholder="Email*">
                <input type="text" id="phone" name="Telephone/GSM" class="form-control input-lg" placeholder="Téléphone*">
 	       <label>J'aimerais devenir: </label>
-
-	       <div class="checkbox">
-		  <input id="recolteur-hidden" type="text" name="Récolteur?"/><!-- Hidden, updated with JS -->
-		  <input id="recolteur" type="checkbox" value="">
-		  <label for="recolteur">Récolteur</label>
-
-		  <input id="donneur-hidden" type="text" name="Donneur?"/><!-- Hidden, updated with JS -->
-		  <input id="donneur" type="checkbox" value="">
-		  <label for="donneur">Donneur</label>
-	       </div>
-            </div>
-
+	       <select class="form-control" name="Type de soutien">
+		  <option value="Récolteur">Récolteur</option>
+		  <option value="Donneur">Donneur</option>
+		  <option value="Récolteur et donneur">Récolteur et donneur</option>
+	       </select>
+	    </div>
             <div class="col-md-6">
-               <div class="form-group">
+	       <div class="form-group">
                   <textarea cols="6" rows="7" id="comments" name="Informations complémentaires" class="form-control input-lg" placeholder="Informations complémentaires"></textarea>
                   <p>Pour les donneurs de fruits, veuillez nous renseigner le <strong>type</strong> et le <strong>nombre</strong> d'arbres fruitiers dont vous disposez ainsi que la <strong>période de récolte</strong> de chaque arbre. <br>Merci d'avance!</p>
-               </div>
+	       </div>
 
             </div>
 
             <div class="col-md-12">
-               <button id="submit" type="submit" class="btn btn-primary btn-lg btn-fc">Envoyer</button>
+	       <button id="submit" type="submit" class="btn btn-primary btn-lg btn-fc">Envoyer</button>
             </div>
 	 </form>
       </div>
@@ -62,7 +56,5 @@ title: FruitCollect - Nous Soutenir
 	    <p>BE08 0017 8545 1213</p>
 	 </div>
       </div>
-
-
    </div>
 </div>

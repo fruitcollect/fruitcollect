@@ -18,29 +18,29 @@ title: FruitCollect - Commande de jus
 <div class="row">
    <div class="col-sm-8">
       <form method="post" action="https://formspree.io/carlosvkr@gmail.com">
-	 <input type="text" placeholder="Nom/prénom" class="form-control">
-	 <input type="text" placeholder="Adresse de livraison" class="form-control">
+	 <input type="text" name="Nom/prénom" placeholder="Nom/prénom" class="form-control">
+	 <input type="text" name="Adresse de livraison" placeholder="Adresse de livraison" class="form-control">
 	 <div class="row">
 	    <div class="col-sm-6">
-	       <input type="text" id="datepicker" placeholder="Date de livraison (un dimanche sur deux)" class="form-control">
+	       <input type="text" name="Date de livraison" id="datepicker" placeholder="Date de livraison (un dimanche sur deux)" class="form-control">
 	    </div>
 	    <div class="col-sm-6">
-	       <input type="text" id="timepicker" placeholder="Heure de livraison" id="timepicker2" class="form-control">
+	       <input type="text" name="Heure de livraison" id="timepicker" placeholder="Heure de livraison (de 9h a 13h)" id="timepicker2" class="form-control">
 	    </div>
 	 </div>
 	 <div class="row">
 	    <div class="col-sm-6">
-	       <input type="number" min="4" placeholder="Nombre de bouteilles souhaitées" class="form-control">
+	       <input type="number" name="Nombre de bouteilles" min="4" placeholder="Nombre de bouteilles souhaitées" class="form-control">
 	    </div>
 	    <div class="col-sm-6">
-	       <input type="number" placeholder="Nombre de pains au chocolat souhaités" class="form-control">
+	       <input type="number" name="Nombre de pains au chocolat" placeholder="Nombre de pains au chocolat souhaités" class="form-control">
 	    </div>
 	 </div>
-	 <input type="email" placeholder="Email" class="form-control">
-	 <input type="text" placeholder="Numéro de téléphone" class="form-control">
+	 <input type="email" name="email" placeholder="Email" class="form-control">
+	 <input type="text" name="Numéro de téléphone" placeholder="Numéro de téléphone" class="form-control">
+	 <button class="btn btn-primary btn-lg btn-fc" type="submit">Commander</button>
+	 <p class="pull-right">Cout total: </p>
       </form>
-      <button class="btn btn-primary btn-lg btn-fc" type="submit">Commander</button>
-      <p class="pull-right">Cout total: </p>
    </div>
    <div class="col-sm-4">
       Pictures
