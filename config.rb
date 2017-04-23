@@ -5,10 +5,7 @@ activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
 end
 
-activate :relative_assets       # Links and scripts do not start with /
 activate :directory_indexes     # One index per folder. Pretty URLs
-set :relative_links, true     # GitHub Pages dev problem with urls..
-
 
 # Layouts
 # https://middlemanapp.com/basics/layouts/
@@ -56,9 +53,9 @@ set :partials_dir, "partials"
 set :site_url, ""
 
 configure :build do
+  set :http_prefix, '/fruitcollect'
   activate :minify_css
   activate :minify_html
-  set :site_url, "/fruitcollect"
   activate :minify_javascript, :inline => true
   set :js_compressor, Uglifier.new(:mangle => {:toplevel => true}, :compress => {:unsafe => true}, :output => {:comments => :none})
   # activate :asset_hash
