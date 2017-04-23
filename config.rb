@@ -15,7 +15,6 @@ page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
 
-
 # Assets
 set :css_dir, "assets/css"
 set :js_dir, "assets/js"
@@ -50,10 +49,7 @@ set :partials_dir, "partials"
 # Build-specific configuration
 # https://middlemanapp.com/advanced/configuration/#environment-specific-settings
 
-set :site_url, ""
-
 configure :build do
-  set :http_prefix, '/fruitcollect'
   activate :minify_css
   activate :minify_html
   activate :minify_javascript, :inline => true
