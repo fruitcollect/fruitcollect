@@ -11,9 +11,12 @@
 // about supported directives.
 //
 
+//= dont require_tree .
+
 
 //= require jquery2
 //= require jquery_ujs
-//= require_tree .
 //= require bootstrap
 //= require init
+//= require commande
+//= require unslider-min
