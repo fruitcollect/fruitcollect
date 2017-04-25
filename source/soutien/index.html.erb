@@ -9,14 +9,14 @@ title: FruitCollect - Nous Soutenir
       <div class="row">
 	 <form method="post" id="contactform" name="contactform" class="contact-form clearfix" action="https://formspree.io/carlosvkr@gmail.com">
             <div class="col-md-6">
-               <input type="text" id="name" name="Nom"  class="form-control" placeholder="Nom*">
-               <input type="text" id="prenom" name="Prénom"  class="form-control" placeholder="Prénom*">
-               <input type="text" id="age" name="Age"  class="form-control" placeholder="Date de Naissance*">
-               <input type="text" id="adresse" name="Adresse"  class="form-control" placeholder="Adresse, n°, ville*">
-               <input type="email" id="email" name="email"  class="form-control" placeholder="Email*">
-               <input type="text" id="phone" name="Telephone/GSM" class="form-control" placeholder="Téléphone*">
+               <input type="text" id="name" name="Nom"  class="form-control" placeholder="Nom*" required>
+               <input type="text" id="prenom" name="Prénom"  class="form-control" placeholder="Prénom*" required>
+               <input type="date" id="age" name="Date de naissance"  class="form-control" placeholder="Date de Naissance*" required>
+               <input type="text" id="adresse" name="Adresse"  class="form-control" placeholder="Adresse, n°, ville*" required>
+               <input type="email" id="email" name="email"  class="form-control" placeholder="Email*" required>
+               <input type="tel" id="phone" name="Téléphone/GSM" class="form-control" placeholder="Téléphone/GSM*" required>
 	       <label>J'aimerais devenir: </label>
-	       <select class="form-control" name="Type de soutien">
+	       <select class="form-control" name="Type de soutien" required>
 		  <option value="Récolteur">Récolteur</option>
 		  <option value="Donneur">Donneur</option>
 		  <option value="Récolteur et donneur">Récolteur et donneur</option>
