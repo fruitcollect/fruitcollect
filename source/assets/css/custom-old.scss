@@ -14,6 +14,8 @@ img.desaturate {
     }
 }
 
+/* Calendar Datepicker */
+
 td.day:not(.disabled) {
     border: 2px solid #8cc152;
     border-radius: 4px;
@@ -60,6 +62,8 @@ div.page-header {
 
 img.apple {
     margin-bottom: 3em;
+    width: 100%;
+    max-width: 250px;
 }
 
 img.team-pic {
@@ -69,22 +73,28 @@ img.team-pic {
 /* Navbar */
 
 .navbar-nav > li > a, .navbar-brand {
-    line-height: 40px;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 12px;
 }
 
+.navbar-brand > img {
+    transform: translateY(-30%);
+}
+
 .navbar {
-    min-height: 40px;
     opacity: 0.9;
 }
 
 a#soutien {
-    padding-top: 3px;
-    padding-bottom: 3px;
-    margin-top: 9px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-top: 10px;
     border: 3px solid #8cc152;
+}
+
+.navbar-toggle .icon-bar {
+    height: 3px;
 }
 
 
@@ -98,4 +108,34 @@ img.gallery-pic {
 
 .my-slider {
     border-radius: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #2d2d2d;
+}
+
+.unslider-arrow {
+	display: block;
+	width: 32px;
+	height: 32px;
+	top: 50%;
+	right: -50px;
+	left: auto;
+	overflow: hidden;
+	background: rgba(0,0,0,.2) no-repeat 50% 50%;
+	background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAQCAQAAABuQZ3IAAAAi0lEQVR4AU3OISBEQQBAwS0AACS9NxqQgCZpkiYBVddFvWhAAUABAPQCAGC4g/0vTnrBqCfDIZl70J+kMUBPpEwT4FNXxBxz4F1HxHyr4EVTxBLb4EFNxEon4CJSlVNw9AcV9sC16h8osgke1P1ArgXwouVvdQq86ww/GQefusNf7kBviBlxpT8k+gL/Wox4r1d4MwAAAABJRU5ErkJggg==');
+	background-size: 7px 11px;
+	border-radius: 32px;
+	text-indent: -999em;
+	opacity: .6;
+	transition: opacity .2s;
+	&.next {
+	    right: 40px;
+	}
+	&.prev {
+	    transform: rotate(-180deg);
+	    left: 40px;
+	}
+	&:hover {
+	    opacity: 1;
+	}
 }

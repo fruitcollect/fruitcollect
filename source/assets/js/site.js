@@ -19,4 +19,5 @@
 //= require bootstrap
 //= require init
 //= require commande
+//= require soutien
 //= require unslider-min
