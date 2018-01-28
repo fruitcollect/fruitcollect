@@ -4,6 +4,8 @@ gem 'middleman', '3.4.1'
 gem 'middleman-livereload'
 gem 'middleman-sprockets'
 gem "middleman-minify-html"
+gem "nokogiri", "> 1.8.0"       # critical severity security
+                                # vulnerability in nokogiri < 1.8.1
 
 gem "uglifier"
 
