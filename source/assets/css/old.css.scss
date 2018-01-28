@@ -1,9 +1,9 @@
 /*------------------------------------------------------------------
 [Master Stylesheet]
-Project:	Gaea
-Version:	1.0
-Last change:	08/06/14
-Author:	imithemes
+Project:        Gaea
+Version:        1.0
+Last change:    08/06/14
+Author: imithemes
 -------------------------------------------------------------------*/
 /* Stylesheets and Google fonts import */
 
@@ -17,11 +17,11 @@ Author:	imithemes
 4. Padding Sets
 5. Spacers Sets
 6. Site Structure & Appearance
-	6.1. Main Navigation
-	6.2. Slider Revolution Custom Caption Styling
-	6.3. Widgets Styling
-	6.4. Counter Shortcode
-	6.5. Parallax Backgrounds
+        6.1. Main Navigation
+        6.2. Slider Revolution Custom Caption Styling
+        6.3. Widgets Styling
+        6.4. Counter Shortcode
+        6.5. Parallax Backgrounds
 7. Responsive Media Queries
 -------------------------------------------------------------------*/
 
@@ -32,13 +32,13 @@ Author:	imithemes
 
 /* Inner Pages */
 .page-header{
-	height:280px;
-	margin:0;
-	background-color:#ccc;
-	background-repeat:no-repeat;
-	background-size:cover;
-	background-position:center center;
-	border:0;
+    height:280px;
+    margin:0;
+    background-color:#ccc;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center center;
+    border:0;
 }
 
 a {
@@ -144,8 +144,8 @@ blockquote cite{
 blockquote cite:before{
     content:"- ";
 }
-p{
-    margin:0 0 18px 0;
+p {
+    margin:0 0 14px 0;
 }
 p.md{
     font-size:16px;
@@ -574,8 +574,8 @@ body{
 
 @media (min-width: 1200px) {
     body.boxed .body .site-header, body.boxed .body .main-menu-wrapper{
-	max-width:100%;
-	width:1250px;
+        max-width:100%;
+        width:1250px;
     }
 }
 .site-header{
@@ -764,211 +764,211 @@ body.boxed .body .site-header{
 
 @media only screen and (max-width: 1199px) {
     .page-header{
-	height:200px;
+        height:200px;
     }
     .page-header h2{
-	padding-top:30px;
+        padding-top:30px;
     }
     .page-header .breadcrumb{
-	padding-top:40px;
+        padding-top:40px;
     }
     .site-header{
-	width:100%;
-	z-index:1000;
-	position:relative;
-	left:0;
-	margin-left:0;
+        width:100%;
+        z-index:1000;
+        position:relative;
+        left:0;
+        margin-left:0;
     }
     h1.logo{
-	width:90%;
+        width:90%;
     }
     .main-navigation{
-	display:none;
-	width:100%;
-	position:absolute;
-	height:auto;
-	left:0;
-	top:75px;
-	background:#fff;
-	z-index:99;
-	border-top:2px solid #fafafa;
+        display:none;
+        width:100%;
+        position:absolute;
+        height:auto;
+        left:0;
+        top:75px;
+        background:#fff;
+        z-index:99;
+        border-top:2px solid #fafafa;
     }
     .main-navigation ul{
-	float:none;
+        float:none;
     }
     .main-navigation > ul > li{
-	display:block;
-	width:100%;
+        display:block;
+        width:100%;
     }
     .main-navigation > ul > li > a{
-	display:block;
-	padding:15px 0 15px 20px;
-	line-height:normal;
+        display:block;
+        padding:15px 0 15px 20px;
+        line-height:normal;
     }
     .main-navigation > ul > li ul{
-	position:static;
-	top:0;
-	left:0!important;
-	margin:0;
-	-webkit-box-shadow:none;
-	box-shadow:none;
-	-webkit-border-radius:0;
-	border-radius:0;
+        position:static;
+        top:0;
+        left:0!important;
+        margin:0;
+        -webkit-box-shadow:none;
+        box-shadow:none;
+        -webkit-border-radius:0;
+        border-radius:0;
     }
     .main-navigation > ul > li > ul li ul{
-	position:static;
-	margin:0;
-	left:0!important;
-	width:100%;
+        position:static;
+        margin:0;
+        left:0!important;
+        width:100%;
     }
     .main-navigation > ul > li > ul:before, .main-navigation > ul > li > ul li ul:before{
-	display:none;
+        display:none;
     }
     .main-navigation > ul > li.megamenu > ul{
-	width:100%;
+        width:100%;
     }
     .main-navigation > ul > li.megamenu > ul .megamenu-container > div.row > div{
-	margin-top:20px;
+        margin-top:20px;
     }
     .number-block{
-	width:40px;
-	height:80px;
+        width:40px;
+        height:80px;
     }
     .icon-block p{
-	padding:0;
+        padding:0;
     }
     .border-col{
-	border-right: 0;
+        border-right: 0;
     }
     .post-thumb{
-	margin-bottom:20px;
+        margin-bottom:20px;
     }
     .partner-logos li{
-	margin:28px 52px 0 0;
+        margin:28px 52px 0 0;
     }
     .sidebar{
-	margin-top:40px;
+        margin-top:40px;
     }
     .secondary-bar .nav-pills{
-	float:left!important;
+        float:left!important;
     }
     .secondary-bar span.big, .secondary-bar .basic-link{
-	display:block;
-	margin-bottom:20px;
-	line-height:1em
+        display:block;
+        margin-bottom:20px;
+        line-height:1em
     }
     .secondary-bar .btn.pull-right{
-	float:left!important;
+        float:left!important;
     }
 }
 @media only screen and (max-width: 767px) {
     /* Isotope */
     .isotope {
-	overflow: visible !important;
-	height: auto !important;
+        overflow: visible !important;
+        height: auto !important;
     }
     .isotope-item {
-	position: static !important;
-	margin-right: auto;
-	margin-left: auto;
-	width: auto;
-	-webkit-transform: none !important;
-	-moz-transform: none !important;
-	-ms-transform: none !important;
-	-o-transform: none !important;
-	transform: none !important;
+        position: static !important;
+        margin-right: auto;
+        margin-left: auto;
+        width: auto;
+        -webkit-transform: none !important;
+        -moz-transform: none !important;
+        -ms-transform: none !important;
+        -o-transform: none !important;
+        transform: none !important;
     }
     .isotope-hidden {
-	display: none !important;
+        display: none !important;
     }
     .grid-item{
-	margin-bottom: 6%;
+        margin-bottom: 6%;
     }
     .grid-holder.col-2 .grid-item{
-	width:95%;
+        width:95%;
     }
     .grid-holder.col-3 .grid-item{
-	width:95%;
+        width:95%;
     }
     .grid-holder.col-4 .grid-item{
-	width:95%;
+        width:95%;
     }
     .img-thumbnail{
-	margin-bottom:20px;
+        margin-bottom:20px;
     }
     .grid-item .media-box{
-	margin-bottom:0;
+        margin-bottom:0;
     }
     .sidebar{
-	float:left;
-	width:100%;
-	margin-top:30px;
+        float:left;
+        width:100%;
+        margin-top:30px;
     }
     #back-to-top{
-	display:none!important;
+        display:none!important;
     }
     .number-block{
-	width:20px;
-	height:40px;
+        width:20px;
+        height:40px;
     }
     .icon-block{
-	margin-bottom:40px;
+        margin-bottom:40px;
     }
     .footer-widget{
-	margin-bottom:30px;
+        margin-bottom:30px;
     }
     .site-bottom-footer{
-	text-align:center;
+        text-align:center;
     }
     .footer-nav{
-	float:none;
-	margin-top:20px;
+        float:none;
+        margin-top:20px;
     }
     .footer-nav li{
-	margin-left:0;
-	margin-right:15px;
+        margin-left:0;
+        margin-right:15px;
     }
     .secondary-bar .col-md-offset-1{
-	margin-top:20px;
+        margin-top:20px;
     }
     .event-register-block{
-	margin-top:30px;
+        margin-top:30px;
     }
     .border-cols > div{
-	width:100%;
-	border-right:0;
-	padding-left:0;
-	padding-right:0;
-	margin-bottom:10px;
+        width:100%;
+        border-right:0;
+        padding-left:0;
+        padding-right:0;
+        margin-bottom:10px;
     }
     .nav-tabs-bar{
-	height:auto;
-	padding-right:0;
+        height:auto;
+        padding-right:0;
     }
     .nav-tabs-bar .pull-right{
-	display:none;
+        display:none;
     }
     .nav-tabs{
-	float:none;
-	width:100%;
+        float:none;
+        width:100%;
     }
     .nav-tabs > li{
-	width:100%;
+        width:100%;
     }
     .nav-tabs > li a{
-	border-right:0;
+        border-right:0;
     }
     .featured-project-block{
-	margin-bottom:30px;
+        margin-bottom:30px;
     }
     .event-single-venue > span:first-child{
-	display:none;
+        display:none;
     }
     .partner-logos li{
-	text-align:center;
-	margin-left:0;
-	margin-right:0;
-	width:100%;
+        text-align:center;
+        margin-left:0;
+        margin-right:0;
+        width:100%;
     }
 }
 @media only screen and (min-width: 320px) and (max-width: 480px) {

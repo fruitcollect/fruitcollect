@@ -29,7 +29,7 @@ title: FruitCollect - Contact
                         <input type="text" id="name" name="Nom/Prénom" class="form-control input-lg" placeholder="Nom et prénom*" required>
                      </div>
                      <div class="form-group">
-                        <input type="email" id="email" name="email" class="form-control input-lg" placeholder="Email*" required>
+                        <input type="email" id="email" name="Email" class="form-control input-lg" placeholder="Email*" required>
                      </div>
                      <div class="form-group">
                         <input type="text" id="phone" name="Téléphone/GSM" class="form-control input-lg" placeholder="Téléphone">
@@ -58,34 +58,36 @@ title: FruitCollect - Contact
          </div>
       </div>
       <div class="row">
-	 <div class="col-sm-8">
-	    <div id="map" style='width: 100%; height: 400px; margin-top: 2em;'></div>
-	    <script>
-	     function initMap() {
-               var dumon = {lat: 50.839870, lng: 4.465323};
+         <div class="col-sm-8">
+            <div id="map" style='width: 100%; height: 400px; margin-top: 2em;'></div>
+            <script>
+             function initMap() {
+               var siege_social = {lat: 50.851401, lng: 4.375115};
                var map = new google.maps.Map(document.getElementById('map'), {
-		 zoom: 16,
-		 center: dumon
+                 zoom: 15,
+                 center: siege_social
                });
-	       var contentString = '<div id="content"><p>Place Dumon, Woluwe Saint Pierre, 1150, Bruxelles</p></div>';
+               var contentString = '<div id="content"><p>Rue de Liedekerke 71, 1210, Bruxelles</p></div>';
 
-	       var infowindow = new google.maps.InfoWindow({
-		 content: contentString
+               var infowindow = new google.maps.InfoWindow({
+                 content: contentString
                });
 
-	       var marker = new google.maps.Marker({
-		 position: dumon,
-		 map: map,
-		 title: "Helo"
-	       });
-
-	       marker.addListener('click', function() {
-		 infowindow.open(map, marker);
+               var marker = new google.maps.Marker({
+                 position: siege_social,
+                 map: map,
+                 title: "Helo"
                });
-	     }
-	    </script>
-	    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjGD14mJ3VmBhf6Hf40p6bBOkV03Z8KUc&callback=initMap"></script>
-	 </div>
+
+               marker.addListener('click', function() {
+                 infowindow.open(map, marker);
+               });
+
+               infowindow.open(map, marker);
+             }
+            </script>
+            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjGD14mJ3VmBhf6Hf40p6bBOkV03Z8KUc&callback=initMap"></script>
+         </div>
       </div>
    </div>
 </div>

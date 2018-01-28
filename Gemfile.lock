@@ -73,6 +73,8 @@ GEM
       thor (>= 0.14, < 2.0)
     jquery-timepicker-rails (1.11.10)
       railties (>= 3.1.0)
+    jquery-ui-rails (6.0.1)
+      railties (>= 3.2.16)
     json (2.0.4)
     kramdown (1.13.2)
     listen (3.0.8)
@@ -190,6 +192,7 @@ DEPENDENCIES
   font-awesome-sass
   jquery-rails
   jquery-timepicker-rails
+  jquery-ui-rails
   middleman (= 3.4.1)
   middleman-autoprefixer
   middleman-gh-pages
@@ -202,4 +205,4 @@ DEPENDENCIES
   wdm
 
 BUNDLED WITH
-   1.14.6
+   1.16.0

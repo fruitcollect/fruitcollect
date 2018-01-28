@@ -1,3 +1,5 @@
+@import "variables";
+
 .content-right {
     border-left: 1px solid #8bc052;
 }
@@ -8,10 +10,20 @@ img.desaturate {
     height: 70px;
     margin: 1em;
     &:hover {
-	box-shadow: 0px 0px 15px 3px #333;
-	transition: all 0.2s ease-in;
-	filter: none;
+        box-shadow: 0px 0px 15px 3px #333;
+        transition: all 0.2s ease-in;
+        filter: none;
     }
+}
+
+/* Home page, minor stuff */
+
+.fruit-text {
+    color: $green-fruitcollect;
+}
+
+.collect-text {
+    color: $red-fruitcollect;
 }
 
 /* Calendar Datepicker */
@@ -114,28 +126,28 @@ img.gallery-pic {
 }
 
 .unslider-arrow {
-	display: block;
-	width: 32px;
-	height: 32px;
-	top: 50%;
-	right: -50px;
-	left: auto;
-	overflow: hidden;
-	background: rgba(0,0,0,.2) no-repeat 50% 50%;
-	background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAQCAQAAABuQZ3IAAAAi0lEQVR4AU3OISBEQQBAwS0AACS9NxqQgCZpkiYBVddFvWhAAUABAPQCAGC4g/0vTnrBqCfDIZl70J+kMUBPpEwT4FNXxBxz4F1HxHyr4EVTxBLb4EFNxEon4CJSlVNw9AcV9sC16h8osgke1P1ArgXwouVvdQq86ww/GQefusNf7kBviBlxpT8k+gL/Wox4r1d4MwAAAABJRU5ErkJggg==');
-	background-size: 7px 11px;
-	border-radius: 32px;
-	text-indent: -999em;
-	opacity: .6;
-	transition: opacity .2s;
-	&.next {
-	    right: 40px;
-	}
-	&.prev {
-	    transform: rotate(-180deg);
-	    left: 40px;
-	}
-	&:hover {
-	    opacity: 1;
-	}
+    display: block;
+    width: 32px;
+    height: 32px;
+    top: 50%;
+    right: -50px;
+    left: auto;
+    overflow: hidden;
+    background: rgba(0,0,0,.2) no-repeat 50% 50%;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAQCAQAAABuQZ3IAAAAi0lEQVR4AU3OISBEQQBAwS0AACS9NxqQgCZpkiYBVddFvWhAAUABAPQCAGC4g/0vTnrBqCfDIZl70J+kMUBPpEwT4FNXxBxz4F1HxHyr4EVTxBLb4EFNxEon4CJSlVNw9AcV9sC16h8osgke1P1ArgXwouVvdQq86ww/GQefusNf7kBviBlxpT8k+gL/Wox4r1d4MwAAAABJRU5ErkJggg==');
+    background-size: 7px 11px;
+    border-radius: 32px;
+    text-indent: -999em;
+    opacity: .6;
+    transition: opacity .2s;
+    &.next {
+        right: 40px;
+    }
+    &.prev {
+        transform: rotate(-180deg);
+        left: 40px;
+    }
+    &:hover {
+        opacity: 1;
+    }
 }

@@ -14,10 +14,12 @@
 //= dont require_tree .
 
 
-//= require jquery2
+//= require jquery3
 //= require jquery_ujs
+//= require jquery-ui
 //= require bootstrap
 //= require init
 //= require commande
 //= require soutien
 //= require unslider-min
+//= require matomo

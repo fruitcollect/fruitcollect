@@ -16,6 +16,7 @@ gem 'middleman-gh-pages'
 gem "bootstrap-sass", :require => false
 gem "font-awesome-sass", :require => false
 gem "jquery-rails", :require => false
+gem "jquery-ui-rails", :require => false
 gem 'momentjs-rails', '>= 2.9.0', :require => false
 gem 'bootstrap-datepicker-rails', :require => false
 gem 'jquery-timepicker-rails', :require => false

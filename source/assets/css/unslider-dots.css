@@ -1,9 +1,4 @@
 /**
- *   Here's where everything gets included. You don't need
- *   to change anything here, and doing so might break
- *   stuff. Here be dragons and all that.
- */
-/**
  *   Default variables
  *
  *   While these can be set with JavaScript, it's probably
@@ -12,24 +7,24 @@
  *   hardware-accelerated goodness.
  */
 .unslider-nav ol {
-  list-style: none;
-  text-align: center;
+    list-style: none;
+    text-align: center;
 }
 
 .unslider-nav ol li {
-  display: inline-block;
-  width: 13px;
-  height: 13px;
-  margin: 0 4px;
-  background: transparent;
-  border-radius: 10px;
-  overflow: hidden;
-  text-indent: -999em;
-  border: 2px solid #000;
-  cursor: pointer;
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    margin: 0 4px;
+    background: transparent;
+    border-radius: 10px;
+    overflow: hidden;
+    text-indent: -999em;
+    border: 2px solid #000;
+    cursor: pointer;
 }
 
 .unslider-nav ol li.unslider-active {
-  background: #000;
-  cursor: default;
+    background: #000;
+    cursor: default;
 }
