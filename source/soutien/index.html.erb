@@ -7,33 +7,47 @@ title: FruitCollect - Nous Soutenir
       <h2>Devenir Récolteur et/ou Donneur</h2>
 
       <div class="row">
-	 <form method="post" id="contactform" name="contactform" class="contact-form clearfix" action="https://formspree.io/info@fruitcollect.be">
+         <form method="post" id="soutienform" name="soutient_form" class="contact-form clearfix" action="https://formspree.io/info@fruitcollect.be">
             <div class="col-md-6">
+               <h4>J'aimerais devenir: </h4>
+               <select id="type" class="form-control" name="Type de soutien" required>
+                  <option label="recolteur" value="Récolteur">Récolteur</option>
+                  <option label="donneur" value="Donneur">Donneur</option>
+                  <option label="both" value="Récolteur et donneur">Récolteur et donneur</option>
+               </select>
                <input type="text" id="name" name="Nom"  class="form-control" placeholder="Nom*" required>
                <input type="text" id="prenom" name="Prénom"  class="form-control" placeholder="Prénom*" required>
                <input type="text" id="datepicker-birth" name="Date de naissance"  class="form-control" placeholder="Date de Naissance*" required>
                <input type="text" id="adresse" name="Adresse"  class="form-control" placeholder="Adresse, n°, ville*" required>
-               <input type="email" id="email" name="email"  class="form-control" placeholder="Email*" required>
+               <input type="email" id="email" name="Email"  class="form-control" placeholder="Email*" required>
                <input type="tel" id="phone" name="Téléphone/GSM" class="form-control" placeholder="Téléphone/GSM*" required>
-	       <label>J'aimerais devenir: </label>
-	       <select class="form-control" name="Type de soutien" required>
-		  <option value="Récolteur">Récolteur</option>
-		  <option value="Donneur">Donneur</option>
-		  <option value="Récolteur et donneur">Récolteur et donneur</option>
-	       </select>
-	    </div>
+               <div id="variable_inputs"></div>
+
+               <h4 class="donneur">Type de fruits:</h4>
+               <%= fruit_choices %>
+               <input class="donneur" type="text" id="period" name="Période de récolte" class="form-control" placeholder="Période de récolte estimée" required>
+               <h4 class="recolteur">Motorisé</h4>
+
+               <label for="oui" class="recolteur">Oui
+                  <input type="radio" name="Motorisé" value="oui" required />
+               </label>
+
+               <label for="non" class="recolteur">Non
+                  <input type="radio" name="Motorisé" value="non" required />
+               </label>
+
+            </div>
             <div class="col-md-6">
-	       <div class="form-group">
+               <div class="form-group">
                   <textarea cols="6" rows="7" id="comments" name="Informations complémentaires" class="form-control" placeholder="Informations complémentaires"></textarea>
-                  <p>Pour les donneurs de fruits, veuillez nous renseigner le <strong>type</strong> et le <strong>nombre</strong> d'arbres fruitiers dont vous disposez ainsi que la <strong>période de récolte</strong> de chaque arbre. <br>Merci d'avance!</p>
-	       </div>
+               </div>
 
             </div>
 
             <div class="col-md-12">
-	       <button id="submit" type="submit" class="btn btn-primary btn-lg btn-fc">Envoyer</button>
+               <button id="submit" type="submit" class="btn btn-primary btn-lg btn-fc">Envoyer</button>
             </div>
-	 </form>
+         </form>
       </div>
    </div>
 
@@ -44,17 +58,17 @@ title: FruitCollect - Nous Soutenir
       <p>Pour nous aider et nous soutenir, vous pouvez dès lors nous faire parvenir des outils neufs ou d'occasions, et/ou une participation financière via :</p>
 
       <div class="panel panel-default">
-	 <div class="panel-heading">
-	    <h4>Notre compte bancaire :</h4>
-	 </div>
-	 <div class="panel-body">
-	    <strong>Banque: </strong>
-	    <p>BNP Paribas Fortis</p>
-	    <strong>BIC: </strong>
-	    <p>GEBABEBB</p>
-	    <strong>IBAN: </strong>
-	    <p>BE08 0017 8545 1213</p>
-	 </div>
+         <div class="panel-heading">
+            <h4>Notre compte bancaire :</h4>
+         </div>
+         <div class="panel-body">
+            <strong>Banque: </strong>
+            <p>BNP Paribas Fortis</p>
+            <strong>BIC: </strong>
+            <p>GEBABEBB</p>
+            <strong>IBAN: </strong>
+            <p>BE08 0017 8545 1213</p>
+         </div>
       </div>
    </div>
 </div>

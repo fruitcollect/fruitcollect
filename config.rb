@@ -7,6 +7,7 @@ end
 
 activate :directory_indexes     # One index per folder. Pretty URLs
 activate :gzip
+activate :livereload
 
 # Layouts
 # https://middlemanapp.com/basics/layouts/
@@ -41,11 +42,18 @@ set :partials_dir, "partials"
 # Methods defined in the helpers block are available in templates
 # https://middlemanapp.com/basics/helper-methods/
 
-# helpers do
-#   def some_helper
-#     'Helping'
-#   end
-# end
+helpers do
+  def fruit_choices
+    html_elem = ""
+    data.fruits.fruits.each do |key, value|
+      html_elem << "<div class='donneur fruit-box' style='border-color:#{value};'>" \
+                   "<label for='#{key}'>#{key}" \
+                   "<input type='checkbox' name='typefruit' value='#{key}' />" \
+                   "</label></div>"
+    end
+    html_elem
+  end
+end
 
 # Build-specific configuration
 # https://middlemanapp.com/advanced/configuration/#environment-specific-settings
