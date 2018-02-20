@@ -1,5 +1,7 @@
 ---
 title: FruitCollect - Commande de jus
+extra_js: [commande]
+extra_css: calendar
 ---
 
 <h2>Commande de jus</h2>
@@ -11,9 +13,9 @@ title: FruitCollect - Commande de jus
 
       <p>Comment ça marche? </p>
       <ul>
-	 <li>Nous venons vous le livrer <strong><u>à vélo</u></strong> le dimanche matin sur les communes de Woluwé, Evere, Etterbeek, Schaerbeek, Ixelles et Uccle et en dehors de ces zones ce sera en voiture</li>
-	 <li>Minimum 4 bouteilles de jus par livraison. Paiement uniquement en cash.</li>
-	 <li>Tout cela pour <strong>3€ par bouteille</strong> de 1 litre et <strong>1€ par pain au chocolat</strong> pour avoir le brunch idéal un dimanche matin.</li>
+         <li>Nous venons vous le livrer <strong><u>à vélo</u></strong> le dimanche matin sur les communes de Woluwé, Evere, Etterbeek, Schaerbeek, Ixelles et Uccle et en dehors de ces zones ce sera en voiture</li>
+         <li>Minimum 4 bouteilles de jus par livraison. Paiement uniquement en cash.</li>
+         <li>Tout cela pour <strong>3€ par bouteille</strong> de 1 litre et <strong>1€ par pain au chocolat</strong> pour avoir le brunch idéal un dimanche matin.</li>
       </ul>
    </div>
    <div class="col-sm-4">
@@ -26,28 +28,29 @@ title: FruitCollect - Commande de jus
 <div class="row">
    <div class="col-sm-8">
       <form method="post" action="https://formspree.io/info@fruitcollect.be">
-	 <input type="text" name="Nom/prénom" placeholder="Nom/prénom" class="form-control">
-	 <input type="text" name="Adresse de livraison" placeholder="Adresse de livraison*" class="form-control" required>
-	 <div class="row">
-	    <div class="col-sm-6">
-	       <input type="text" name="Date de livraison" id="datepicker" placeholder="Date de livraison (un dimanche sur deux)*" class="form-control" required>
-	    </div>
-	    <div class="col-sm-6">
-	       <input type="text" name="Heure de livraison" id="timepicker" placeholder="Heure de livraison (de 9h a 13h)*" id="timepicker2" class="form-control" required>
-	    </div>
-	 </div>
-	 <div class="row">
-	    <div class="col-sm-6">
-	       <input type="number" name="Nombre de bouteilles" min="4" placeholder="Nombre de bouteilles souhaitées*" class="form-control" required>
-	    </div>
-	    <div class="col-sm-6">
-	       <input type="number" name="Nombre de pains au chocolat" placeholder="Nombre de pains au chocolat souhaités*" class="form-control" required>
-	    </div>
-	 </div>
-	 <input type="email" name="email" placeholder="Email*" class="form-control" required>
-	 <input type="tel" name="Numéro de téléphone" placeholder="Numéro de téléphone" class="form-control">
-	 <button class="btn btn-primary btn-lg btn-fc" type="submit">Commander</button>
-	 <!-- <p class="pull-right">Cout total: </p> -->
+         <input type="hidden" name="_next" value="//fruitcollect.be/merci" />
+         <input type="text" name="Nom/prénom" placeholder="Nom/prénom" class="form-control">
+         <input type="text" name="Adresse de livraison" placeholder="Adresse de livraison*" class="form-control" required>
+         <div class="row">
+            <div class="col-sm-6">
+               <input type="text" name="Date de livraison" id="datepicker-livraison" placeholder="Date de livraison (un dimanche sur deux)*" class="form-control" required>
+            </div>
+            <div class="col-sm-6">
+               <input type="text" name="Heure de livraison" id="timepicker-livraison" placeholder="Heure de livraison (de 9h a 13h)*" id="timepicker2" class="form-control" required>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-sm-6">
+               <input type="number" name="Nombre de bouteilles" min="4" placeholder="Nombre de bouteilles souhaitées*" class="form-control" required>
+            </div>
+            <div class="col-sm-6">
+               <input type="number" name="Nombre de pains au chocolat" placeholder="Nombre de pains au chocolat souhaités*" class="form-control" required>
+            </div>
+         </div>
+         <input type="email" name="Email" placeholder="Email*" class="form-control" required>
+         <input type="tel" name="Numéro de téléphone" placeholder="Numéro de téléphone" class="form-control">
+         <button class="btn btn-primary btn-lg btn-fc" type="submit">Commander</button>
+         <!-- <p class="pull-right">Cout total: </p> -->
       </form>
    </div>
    <div class="col-sm-4">

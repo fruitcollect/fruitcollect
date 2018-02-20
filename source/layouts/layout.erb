@@ -9,40 +9,34 @@
       <title><%= current_page.data.title || "FruitCollect" %></title>
       <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "FruitCollect" %>">
       <%= stylesheet_link_tag "site" %>
-      <%= javascript_include_tag "site" %>
       <%= favicon_tag 'favicon.png' %>
-      <% if current_page.data.extra_js %>
-	 <% current_page.data.extra_js.each do |js_file| %>
-	    <script src='<%= js_file %>'></script>
-	 <% end %>
-      <% end %>
       <% if current_page.data.extra_css %>
-	 <link src='<%= current_page.data.extra_css %>' rel='stylesheet' />
+         <%= stylesheet_link_tag current_page.data.extra_css %>
       <% end %>
    </head>
    <body class="home">
       <div id="fb-root"></div>
       <%= javascript_include_tag 'sdk', 'data-turbolinks-track' => 'reload' %>
       <header class="site-header">
-	 <%= partial "navigation" %>
+         <%= partial "navigation" %>
       </header>
       <%#= render 'layouts/messages' %>
       <div class="page-header">
-	 <div class="container">
-   	    <div class="row">
+         <div class="container">
+            <div class="row">
 
-	       <!-- MAIN IMAGE -->
+               <!-- MAIN IMAGE -->
 
-	    </div>
-	 </div>
+            </div>
+         </div>
       </div>
       <!-- End Hero Slider -->
       <div class="double-border"></div>
       <!-- Start Lead Block -->
       <div class="lead-block">
-    	 <div class="container">
+         <div class="container">
 
-	    <%= yield %>
+            <%= yield %>
 
          </div>
       </div>
@@ -50,5 +44,11 @@
       <%= partial "footer" %>
 
       <a id="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+      <%= javascript_include_tag "site" %>
+      <% if current_page.data.extra_js %>
+         <% for js_script in current_page.data.extra_js %>
+            <%= javascript_include_tag js_script %>
+         <% end %>
+      <% end %>
    </body>
 </html>

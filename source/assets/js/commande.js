@@ -16,7 +16,7 @@ $(document).ready(function () {
     }
   }
 
-  $('#datepicker').datepicker({
+  $('#datepicker-livraison').datepicker({
     format: "dd/mm/yyyy",
     startDate: new Date(),
     weekStart: 1,
@@ -52,7 +52,7 @@ $(document).ready(function () {
     return ((day == 0) && (Math.ceil(diffDays % 14 == 0))) ? true : false; //sunday and every other weeks
   }
 
-  $('#timepicker').timepicker({
+  $('#timepicker-livraison').timepicker({
     'minTime': '9:00am',
     'maxTime': '1:00pm',
     'timeFormat': 'H:i',

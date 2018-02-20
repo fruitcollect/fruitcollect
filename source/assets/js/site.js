@@ -19,7 +19,4 @@
 //= require jquery-ui
 //= require bootstrap
 //= require init
-//= require commande
-//= require soutien
-//= require unslider-min
 //= require matomo

@@ -1,29 +1,19 @@
 ---
 title: FruitCollect - Galerie
+extra_js: [galerie]
 ---
 <div class="row">
    <div class="col-xs-12">
       <h1>Photos des nos récoltes</h1>
 
       <div class="my-slider">
-	 <ul>
-	    <% 15.times do |num| %>
-	       <li>
-		  <%= image_tag "collectes/gallery#{num + 1}.jpg", :class => "gallery-pic" %>
-	       </li>
-	    <% end %>
-	 </ul>
+         <ul>
+            <% 15.times do |num| %>
+               <li>
+                  <%= image_tag "collectes/gallery#{num + 1}.jpg", :class => "gallery-pic" %>
+               </li>
+            <% end %>
+         </ul>
       </div>
    </div>
 </div>
-
-<script>
- jQuery(document).ready(function($) {
-   $('.my-slider').unslider({
-     /* animateHeight: true,*/
-     autoplay: true,
-     infinite: true,
-     delay: 5000,
-   });
- });
-</script>

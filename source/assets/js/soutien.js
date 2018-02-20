@@ -3,18 +3,25 @@
 //= require bootstrap-datepicker
 
 function update_form() {
-  /* Save these bits */
-  var donneur_section = $(".donneur").detach();
-  var recolteur_section = $(".recolteur").detach();
-
-  var support_type = document.forms["soutienform"]["type"].value;
+  var support_type = document.forms["soutienform"]["type_soutien"].value;
   if (support_type == "Récolteur") {
-    recolteur_section.appendTo("#variable_inputs");
+    $(".donneur, .donneur input").prop("disabled", true);
+    $(".recolteur, .recolteur input").prop("disabled", false);
+
+    $(".donneur").fadeOut();
+    $(".recolteur").fadeIn();
   } else if(support_type == "Donneur") {
-    donneur_section.appendTo("#variable_inputs");
+    $(".donneur, .donneur input").prop("disabled", false);
+    $(".recolteur, .recolteur input").prop("disabled", true);
+
+    $(".recolteur").fadeOut();
+    $(".donneur").fadeIn();
   } else {
-    donneur_section.appendTo("#variable_inputs");
-    recolteur_section.appendTo("#variable_inputs");
+    $(".donneur, .donneur input").prop("disabled", false);
+    $(".recolteur, .recolteur input").prop("disabled", false);
+
+    $(".donneur").fadeIn();
+    $(".recolteur").fadeIn();
   }
 }
 
@@ -37,7 +44,7 @@ $(document).ready(function () {
 
   update_form();
 
-  $("select#type").change(function() {
+  $("select#type_soutien").change(function() {
     update_form();
   });
 });

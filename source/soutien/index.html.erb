@@ -1,5 +1,6 @@
 ---
 title: FruitCollect - Nous Soutenir
+extra_js: [soutien]
 ---
 <div class="row">
    <div class="col-sm-12">
@@ -8,12 +9,13 @@ title: FruitCollect - Nous Soutenir
 
       <div class="row">
          <form method="post" id="soutienform" name="soutient_form" class="contact-form clearfix" action="https://formspree.io/info@fruitcollect.be">
+            <input type="hidden" name="_next" value="//fruitcollect.be/merci" />
             <div class="col-md-6">
                <h4>J'aimerais devenir: </h4>
-               <select id="type" class="form-control" name="Type de soutien" required>
-                  <option label="recolteur" value="Récolteur">Récolteur</option>
-                  <option label="donneur" value="Donneur">Donneur</option>
-                  <option label="both" value="Récolteur et donneur">Récolteur et donneur</option>
+               <select id="type_soutien" class="form-control" name="Type de soutien" required>
+                  <option label="Récolteur" value="Récolteur">Récolteur</option>
+                  <option label="Donneur" value="Donneur">Donneur</option>
+                  <option label="Récolteur et donneur" value="Récolteur et donneur">Récolteur et donneur</option>
                </select>
                <input type="text" id="name" name="Nom"  class="form-control" placeholder="Nom*" required>
                <input type="text" id="prenom" name="Prénom"  class="form-control" placeholder="Prénom*" required>
@@ -21,25 +23,25 @@ title: FruitCollect - Nous Soutenir
                <input type="text" id="adresse" name="Adresse"  class="form-control" placeholder="Adresse, n°, ville*" required>
                <input type="email" id="email" name="Email"  class="form-control" placeholder="Email*" required>
                <input type="tel" id="phone" name="Téléphone/GSM" class="form-control" placeholder="Téléphone/GSM*" required>
-               <div id="variable_inputs"></div>
 
                <h4 class="donneur">Type de fruits:</h4>
                <%= fruit_choices %>
-               <input class="donneur" type="text" id="period" name="Période de récolte" class="form-control" placeholder="Période de récolte estimée" required>
-               <h4 class="recolteur">Motorisé</h4>
+               <input class="donneur" type='text' name='Autres fruits' placeholder="Autres..." />
+               <input class="donneur form-control mt-1" type="text" id="period" name="Période de récolte" class="form-control" placeholder="Période de récolte estimée*" required>
+               <h5 class="recolteur" style="display: inline-block;">Motorisé ?</h5>
 
-               <label for="oui" class="recolteur">Oui
-                  <input type="radio" name="Motorisé" value="oui" required />
+               <label for="Oui" class="recolteur label-and-input">Oui
+                  <input type="radio" name="Motorisé" value="Oui" required />
                </label>
 
-               <label for="non" class="recolteur">Non
-                  <input type="radio" name="Motorisé" value="non" required />
+               <label for="Non" class="recolteur label-and-input">Non
+                  <input type="radio" name="Motorisé" value="Non" required />
                </label>
 
             </div>
             <div class="col-md-6">
                <div class="form-group">
-                  <textarea cols="6" rows="7" id="comments" name="Informations complémentaires" class="form-control" placeholder="Informations complémentaires"></textarea>
+                  <textarea cols="6" rows="7" id="comments" name="Informations complémentaires" class="form-control mt-2" placeholder="Informations complémentaires"></textarea>
                </div>
 
             </div>

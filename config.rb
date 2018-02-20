@@ -46,9 +46,9 @@ helpers do
   def fruit_choices
     html_elem = ""
     data.fruits.fruits.each do |key, value|
-      html_elem << "<div class='donneur fruit-box' style='border-color:#{value};'>" \
+      html_elem << "<div class='donneur fruit-box' style='background-color:#{value}; border-color: #{value}'>" \
                    "<label for='#{key}'>#{key}" \
-                   "<input type='checkbox' name='typefruit' value='#{key}' />" \
+                   "<input type='checkbox' name='Type de fruits' value='#{key}' />" \
                    "</label></div>"
     end
     html_elem
