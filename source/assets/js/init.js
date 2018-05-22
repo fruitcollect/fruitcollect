@@ -20,7 +20,7 @@ function checkCookie() {
     $('#growfunding-modal').modal({
       show: true,
     });
-    document.cookie = "fruitcollect-before=true; expires=Tue, 3 July 2018 12:00:00 UTC";
+    document.cookie = "fruitcollect-before=true; expires=Tue, 3 July 2018 12:00:00 UTC; path=/";
   }
 }
 
