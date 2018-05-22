@@ -15,10 +15,8 @@ function getCookie(cname) {
 }
 
 function checkCookie() {
-  let here_before = getCookie("fruitcollect-before");
-  if (here_before) {
-    ;
-  } else {
+  var here_before = getCookie("fruitcollect-before");
+  if (!here_before) {
     $('#growfunding-modal').modal({
       show: true,
     });
