@@ -6,6 +6,18 @@ div.page-header {
     background-image: image-url('img_budget.jpg');
 }
 
+.modal {
+    text-align: center;
+}
+
+.growfunding-banner {
+    text-align: center;
+    background-color: #f4df42;
+    a {
+        text-decoration: underline;
+    }
+}
+
 .btn-fc {
     border-radius: 20px;
     background-image: none;

@@ -1,3 +1,36 @@
+function getCookie(cname) {
+  var name = cname + "=";
+  var decodedCookie = decodeURIComponent(document.cookie);
+  var ca = decodedCookie.split(';');
+  for(var i = 0; i <ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
+
+function checkCookie() {
+  let here_before = getCookie("fruitcollect-before");
+  if (here_before) {
+    ;
+  } else {
+    $('#growfunding-modal').modal({
+      show: true,
+    });
+    document.cookie = "fruitcollect-before=true; expires=Tue, 3 July 2018 12:00:00 UTC";
+  }
+}
+
+$(document).ready(function(){
+  checkCookie();
+});
+
+
 jQuery(function($){
   "use strict";
 
@@ -8,7 +41,7 @@ jQuery(function($){
      ================================================== */
   GAEA.scrollToTop = function(){
     var windowWidth = $(window).width(),
-	didScroll = false;
+        didScroll = false;
 
     var $arrow = $('#back-to-top');
 
@@ -23,13 +56,13 @@ jQuery(function($){
 
     setInterval(function() {
       if( didScroll ) {
-	didScroll = false;
+        didScroll = false;
 
-	if( $(window).scrollTop() > 200 ) {
-	  $arrow.fadeIn();
-	} else {
-	  $arrow.fadeOut();
-	}
+        if( $(window).scrollTop() > 200 ) {
+          $arrow.fadeIn();
+        } else {
+          $arrow.fadeOut();
+        }
       }
     }, 250);
   }

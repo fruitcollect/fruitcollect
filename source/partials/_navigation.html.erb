@@ -1,4 +1,7 @@
 <nav class="navbar navbar-default navbar-fixed-top">
+   <div class="growfunding-banner">
+      <span><b>Crowdfunding Fruitcollect</b> - <a href="#" data-toggle="modal" data-target="#growfunding-modal">En savoir plus</a></span>
+   </div>
    <div class="container">
       <div class="navbar-header">
          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -7,19 +10,19 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
          </button>
-	 <%= link_to image_tag("logo_fruitcollect.png"), "/", class: "navbar-brand" %>
+         <%= link_to image_tag("logo_fruitcollect.png"), "/", class: "navbar-brand" %>
          <!-- <a class="navbar-brand" href="#">Project name</a> -->
       </div>
       <div id="navbar" class="navbar-collapse collapse">
          <ul class="nav navbar-nav">
-	    <!-- <li><%#= link_to "Accueil", "/" %></li> -->
-      	    <li><%= link_to "Notre Mission", "/mission" %></li>
-       	    <li><%= link_to "Nous soutenir", "/soutien", id: "soutien" %></li>
-	    <li><%= link_to "Commander du jus", "/commande" %></li>
-	    <li><%= link_to "Partenaires", "/partenaires" %></li>
-	    <li><%= link_to "Calendrier des récoltes", "/calendrier" %></li>
-	    <li><%= link_to "Contact", "/contact" %></li>
-	    <li><%= link_to "Galerie", "/galerie" %></li>
+            <!-- <li><%#= link_to "Accueil", "/" %></li> -->
+            <li><%= link_to "Notre Mission", "/mission" %></li>
+            <li><%= link_to "Nous soutenir", "/soutien", id: "soutien" %></li>
+            <li><%= link_to "Commander du jus", "/commande" %></li>
+            <li><%= link_to "Partenaires", "/partenaires" %></li>
+            <li><%= link_to "Calendrier des récoltes", "/calendrier" %></li>
+            <li><%= link_to "Contact", "/contact" %></li>
+            <li><%= link_to "Galerie", "/galerie" %></li>
          </ul>
       </div><!--/.nav-collapse -->
    </div>
