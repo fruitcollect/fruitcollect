@@ -19,4 +19,3 @@
 //= require jquery-ui
 //= require bootstrap
 //= require init
-//= require matomo
