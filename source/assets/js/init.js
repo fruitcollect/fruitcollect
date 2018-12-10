@@ -24,9 +24,9 @@ function checkCookie() {
   }
 }
 
-$(document).ready(function(){
-  checkCookie();
-});
+/* $(document).ready(function(){
+ *   checkCookie();
+ * }); */
 
 
 jQuery(function($){
